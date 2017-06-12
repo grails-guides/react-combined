@@ -17,6 +17,6 @@ Edit `client/src/config.js`:
 [source,javascript]
 .client/src/config.js
 ----
-include::{sourceDir}/client/src/config.js[indent=0, lines=3..4]
+include::{sourceDir}/client/src/config.js[indent=0]
 ----
 <1> The `process.env.NODE_ENV` is a NodeJS environment variable that will tell us if we are running in production or development mode. We're using a simple ternary operator to switch the `SERVER_URL` config property to point to our standalone Grails app during development, and to use the root context in production.
