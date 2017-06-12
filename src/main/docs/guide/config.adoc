@@ -6,7 +6,7 @@ Edit `server/grails-app/conf/application.yml`:
 [source,yml]
 .server/grails-app/conf/application.yml
 ----
-include::{sourceDir}/server/grails-app/conf/application.yml[indent=0, lines=119..122]
+include::{sourceDir}/server/grails-app/conf/application.yml[indent=0, tag=grailsResourcesPattern]
 ----
 
 This simply sets the static resources URL to be set to the root context.
