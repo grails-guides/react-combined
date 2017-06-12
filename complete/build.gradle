@@ -13,7 +13,7 @@ task assembleServerAndClient(dependsOn: ['copyClientResources', ':server:assembl
     description = 'Build combined server & client JAR'
 
     doLast {
-        logger.quiet 'JAR generated under server/build/libs/. It combines server and client'
+        logger.quiet 'JAR generated at server/build/libs/. It combines server and client'
     }
 }
 task(":server:assemble").mustRunAfter(copyClientResources) // <3>
