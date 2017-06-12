@@ -1,0 +1,19 @@
+task copyClientResources(dependsOn: ':client:build') { // <1>
+    group = 'build'
+    description = 'Copy client resources into server'
+    doLast {
+        copy {
+            from project(':client').buildDir.absolutePath
+            into "${project(':server').buildDir}/resources/main/public"
+        }
+    }
+}
+task assembleServerAndClient(dependsOn: ['copyClientResources', ':server:assemble']) {  // <2>
+    group = 'build'
+    description = 'Build combined server & client JAR'
+
+    doLast {
+        logger.quiet 'JAR generated under server/build/libs/. It combines server and client'
+    }
+}
+task(":server:assemble").mustRunAfter(copyClientResources) // <3>
