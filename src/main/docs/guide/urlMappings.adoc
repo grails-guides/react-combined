@@ -5,7 +5,7 @@ Edit `server/grails-app/controllers/react/combined/UrlMappings.groovy`:
 [source,groovy]
 .server/grails-app/controllers/react/combined/UrlMappings.groovy
 ----
-include::{sourceDir}/server/grails-app/controllers/react/combined/UrlMappings.groovy[indent=0, lines=15..19]
+include::{sourceDir}/server/grails-app/controllers/react/combined/UrlMappings.groovy[indent=0, tag=defaultPage]
 ----
 <1> We are using the `grails.util.Environment` class to determine whether we are running in development mode or in a deployed artefact, and setting the URL mappings appropriately.
 
