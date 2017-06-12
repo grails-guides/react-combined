@@ -6,3 +6,4 @@
 *.iml
 .bin
 /.gradle/3.4.1/taskHistory/taskHistory.lock
+.DS_Store
