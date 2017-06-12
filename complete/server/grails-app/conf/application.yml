@@ -2,7 +2,7 @@
 grails:
     profile: react
     codegen:
-        defaultPackage: react.combined
+        defaultPackage: demo
     spring:
         transactionManagement:
             proxies: false
@@ -76,14 +76,16 @@ grails:
 hibernate:
     cache:
         queries: false
-        use_second_level_cache: false
+        use_second_level_cache: true
         use_query_cache: false
+        region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+
 dataSource:
     pooled: true
     jmxExport: true
     driverClassName: org.h2.Driver
     username: sa
-    password: ''
+    password:
 
 environments:
     development:
@@ -117,6 +119,8 @@ environments:
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
 ---
+#tag::grailsResourcesPattern[]
 grails:
     resources:
         pattern: /**
+#end::grailsResourcesPattern[]

@@ -5,14 +5,14 @@ To generate the unified executable JAR, file, simply run the following command:
 ~ ./gradlew assembleServerAndClient
 
 ...
-Built JAR file at [/Users/dev/react-combined/complete/build/server-0.1.jar]
+JAR generated at server/build/libs/. It combines server and client
 ----
 
 To run the application, use the `java -jar` command:
 
 [source, bash]
 ----
-~ java -jar build/server-0.1.jar
+~ java -jar server/build/libs/server-0.1.jar
 
 ...
 Grails application running at http://localhost:8080 in environment: production

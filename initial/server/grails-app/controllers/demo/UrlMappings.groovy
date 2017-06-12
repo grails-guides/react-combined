@@ -1,4 +1,6 @@
-package react.combined
+package demo
+
+import grails.util.Environment
 
 class UrlMappings {
 
@@ -10,7 +12,11 @@ class UrlMappings {
         put "/$controller/$id(.$format)?"(action:"update")
         patch "/$controller/$id(.$format)?"(action:"patch")
 
-        "/"(controller: 'application', action:'index')
+        if(Environment.developmentRun) { //<1>
+            "/"(controller: 'application', action:'index')
+        } else {
+            "/"(uri: '/index.html')
+        }
         "500"(view: '/error')
         "404"(view: '/notFound')
     }

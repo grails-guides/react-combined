@@ -1,9 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Gradle template
-.gradle/
-.idea/
+.gradle
+.idea
 /build/
 *.iml
-build
-*/.idea/
-*/.gradle/
+.bin
+/.gradle/3.4.1/taskHistory/taskHistory.lock
+.DS_Store
+.lock

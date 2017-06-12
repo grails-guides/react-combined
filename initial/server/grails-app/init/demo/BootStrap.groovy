@@ -1,4 +1,4 @@
-package react.combined
+package demo
 
 class BootStrap {
 
