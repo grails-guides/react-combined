@@ -9,4 +9,4 @@ build tasks set up - you can run `./gradlew server:assemble` to build a WAR or
 JAR file, and you can run `yarn build` (or `./gradlew client:build`) to generate
 a static React/webpack bundle.
 Our first step to create a new `build.gradle` file at the top of our project
-structure, above the `client` and `server` subprojects.
+structure, above the `client` and `server` sub-projects.
