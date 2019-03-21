@@ -8,7 +8,7 @@ buildscript {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "com.moowork.gradle:gradle-node-plugin:0.13"
         classpath "org.grails.plugins:hibernate5:${gormVersion-".RELEASE"}"
-        classpath "org.grails.plugins:views-gradle:1.1.6"
+        classpath "org.grails.plugins:views-gradle:2.0.0.BUILD-SNAPSHOT"
     }
 }
 
@@ -20,6 +20,7 @@ apply plugin:"idea"
 apply plugin:"war"
 apply plugin:"org.grails.grails-web"
 apply plugin:"com.moowork.node"
+apply plugin:"org.grails.plugins.views-json"
 
 repositories {
     mavenLocal()
