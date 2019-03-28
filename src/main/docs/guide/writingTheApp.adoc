@@ -1,9 +1,6 @@
 If you open the `initial` project of this guide, you will find a plain project
 generated from the React profile.
 
-We did one minor change. We moved the `initial/server/gradle.properties` to
-the root directory `initial/gradle.properties`
-
 Both the `server` Grails app and the `client` React app have `production`
 build tasks set up - you can run `./gradlew server:assemble` to build a WAR or
 JAR file, and you can run `yarn build` (or `./gradlew client:build`) to generate
